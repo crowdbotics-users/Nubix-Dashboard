@@ -272,23 +272,23 @@ Node.prototype.initUI = function(){
 
 // Node 1
 var node = new Node('SNMP routers');
-node.addInput('SNMP firewalls');
+node.addInput('456');
 
 // Node 2
-var node2 = new Node('Node 2');
-node2.addInput('Text In');
-node2.addInput('Value 5');
+var node2 = new Node('Pod-wide spark analy');
+node2.addInput('22.3k');
+node2.addInput('x');
 
 // Node 3
-var node3 = new Node('Something Else');
-node3.addInput('Color4');
-node3.addInput('Position');
-node3.addInput('Noise Octaves');
+var node3 = new Node('Time series storage');
+node3.addInput('12.3k');
+node3.addInput('x');
+node3.addInput('x');
 
 // Move to initial positions
-node.moveTo({x: 700, y: 600});
-node2.moveTo({x: 400, y: 300});
-node3.moveTo({x:500, y:400});
+node.moveTo({x: 400, y: 600});
+node2.moveTo({x: 700, y: 350});
+node3.moveTo({x:1100, y:450});
 
 // Connect Nodes
 node.connectTo(node2.inputs[0]);
