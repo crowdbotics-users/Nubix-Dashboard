@@ -271,10 +271,8 @@ Node.prototype.initUI = function(){
 // ========
 
 // Node 1
-var node = new Node('Another One');
-node.addInput('Value1');
-node.addInput('Value2');
-node.addInput('Value3');
+var node = new Node('SNMP routers');
+node.addInput('SNMP firewalls');
 
 // Node 2
 var node2 = new Node('Node 2');

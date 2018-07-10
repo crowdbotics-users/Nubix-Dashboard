@@ -1,10 +1,12 @@
+@import "variables";
+
 .parent-nav {
   margin:0;
   padding:0;
 }
 .navbar-primary {
   height:740px;
-  background-color: #4a43c0;
+  background-color: $purple;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -21,14 +23,26 @@
   display: block;
   padding: 10px 18px;
   text-align: left;
-  border-bottom:solid 1px #4a43c0;
+  border-bottom:solid 1px $purple;
   color: #ccc;
 }
 
 .navbar-primary-menu li a:hover {
-  background-color: #413bb2;
+  background-color: $purple-hover;
   text-decoration: none;
   color: white;
+}
+
+.main-content ul li a{
+  color: $light-gray;
+}
+
+.chart-info {
+  text-align: center;
+  border-left: 5px solid $green;
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(224,224,224,1);
+  -moz-box-shadow: 0px 0px 19px 1px rgba(224,224,224,1);
+  box-shadow: 0px 0px 19px 1px rgba(224,224,224,1);
 }
 
 
@@ -37,22 +51,29 @@
   display: block;
   border-top-left-radius:.75em;
   border-top-right-radius:.75em;
-  background-color:#6e6e6e;
+  background-color:$white;
+  color: $strong-gray;
   padding:0.1em .3em 0em;
   margin:-.1em -.3em 0.2em;
 }
 .node{
-  background-color: #4e4e4e;
+  width: 300px;
+  background-color: $white;
+  color: $strong-gray;
+  border-left: 5px solid $purple;
   border-radius: .75em;
   display: inline-block;
   padding:0.1em .3em .25em;
   position:absolute;
+  -webkit-box-shadow: 10px 6px 19px 1px rgba(204,204,204,1);
+  -moz-box-shadow: 10px 6px 19px 1px rgba(204,204,204,1);
+  box-shadow: 10px 6px 19px 1px rgba(204,204,204,1);
 }
 .output,
 .connection:after{
   position:absolute;
-  border:solid 1px #dedede;
-  background-color:#2e2e2e;
+  border:solid 1px $purple-hover;
+  background-color:$purple;
   width:0.5em;
   height:0.5em;
   border-radius:0.5em;
@@ -64,7 +85,7 @@
 }
 .node > .output:hover,
 .connection:hover:after{
-  border-color:red;
+  border-color:$purple-hover;
 }
 .output{
   left: -.5em;
@@ -84,6 +105,7 @@
 }
 svg{
   position:absolute;
+  z-index: -1;
   width:100%;
   height:100%;
 }

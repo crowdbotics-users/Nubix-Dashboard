@@ -27,27 +27,44 @@
   text-decoration: none;
   color: white; }
 
+.main-content ul li a {
+  color: #848484; }
+
+.chart-info {
+  text-align: center;
+  border-left: 5px solid #69e0a6;
+  -webkit-box-shadow: 0px 0px 19px 1px #e0e0e0;
+  -moz-box-shadow: 0px 0px 19px 1px #e0e0e0;
+  box-shadow: 0px 0px 19px 1px #e0e0e0; }
+
 .node:before {
   content: attr(title) " ";
   display: block;
   border-top-left-radius: .75em;
   border-top-right-radius: .75em;
-  background-color: #6e6e6e;
+  background-color: #ffffff;
+  color: #424242;
   padding: 0.1em .3em 0em;
   margin: -.1em -.3em 0.2em; }
 
 .node {
-  background-color: #4e4e4e;
+  width: 300px;
+  background-color: #ffffff;
+  color: #424242;
+  border-left: 5px solid #4a43c0;
   border-radius: .75em;
   display: inline-block;
   padding: 0.1em .3em .25em;
-  position: absolute; }
+  position: absolute;
+  -webkit-box-shadow: 10px 6px 19px 1px #cccccc;
+  -moz-box-shadow: 10px 6px 19px 1px #cccccc;
+  box-shadow: 10px 6px 19px 1px #cccccc; }
 
 .output,
 .connection:after {
   position: absolute;
-  border: solid 1px #dedede;
-  background-color: #2e2e2e;
+  border: solid 1px #413bb2;
+  background-color: #4a43c0;
   width: 0.5em;
   height: 0.5em;
   border-radius: 0.5em; }
@@ -59,7 +76,7 @@
 
 .node > .output:hover,
 .connection:hover:after {
-  border-color: red; }
+  border-color: #413bb2; }
 
 .output {
   left: -.5em;
@@ -79,6 +96,7 @@
 
 svg {
   position: absolute;
+  z-index: -1;
   width: 100%;
   height: 100%; }
 
