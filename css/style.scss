@@ -1,0 +1,32 @@
+.parent-nav {
+  margin:0;
+  padding:0;
+}
+.navbar-primary {
+  height:740px;
+  background-color: #4a43c0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.navbar-primary-menu li a {
+  display: block;
+  padding: 10px 18px;
+  text-align: left;
+  border-bottom:solid 1px #4a43c0;
+  color: #ccc;
+}
+
+.navbar-primary-menu li a:hover {
+  background-color: #413bb2;
+  text-decoration: none;
+  color: white;
+}
