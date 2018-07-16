@@ -1,7 +1,8 @@
 @import "variables";
 
-body{
-  font-family: $main-font;
+
+body {
+  font-family: Circular Std;
 }
 
 .parent-nav {
@@ -67,13 +68,27 @@ body{
   text-align: center;
 }
 
+.table-svg {
+  text-align: center;
+  .table-svg_br {
+    border: {
+        right: 1px solid $soft-gray;
+    }
+  }
+  p{
+    color: $strong-gray;
+    margin-top: 20px;
+  }
+}
+
+
 .node:before{
   content:attr(title) " ";
   display: block;
   border-top-left-radius:.75em;
   border-top-right-radius:.75em;
   background-color:$white;
-  color: $strong-gray;
+  color: $strongest-gray;
   padding:0.1em .3em 0em;
   margin:-.1em -.3em 0.2em;
 }
@@ -82,7 +97,6 @@ body{
   background-color: $white;
   color: $strong-gray;
   border-left: 5px solid $purple;
-  border-radius: .75em;
   display: inline-block;
   padding:0.1em .3em .25em;
   position:absolute;

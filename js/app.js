@@ -287,7 +287,7 @@ node3.addInput('x');
 
 // Move to initial positions
 node.moveTo({x: 400, y: 600});
-node2.moveTo({x: 700, y: 350});
+node2.moveTo({x: 740, y: 396});
 node3.moveTo({x:1100, y:450});
 
 // Connect Nodes

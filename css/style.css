@@ -1,5 +1,8 @@
+@font-face {
+  font-family: Circular Std;
+  src: url(../assets/fonts/CircularStd-Book.otf); }
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: Circular Std; }
 
 .parent-nav {
   margin: 0;
@@ -54,6 +57,14 @@ body {
   padding: 30px 0px 30px 0px;
   text-align: center; }
 
+.table-svg {
+  text-align: center; }
+  .table-svg .table-svg_br {
+    border-right: 1px solid #e6e6e6; }
+  .table-svg p {
+    color: #6e6e6e;
+    margin-top: 20px; }
+
 .node:before {
   content: attr(title) " ";
   display: block;
@@ -67,9 +78,8 @@ body {
 .node {
   width: 300px;
   background-color: #ffffff;
-  color: #424242;
+  color: #6e6e6e;
   border-left: 5px solid #4a43c0;
-  border-radius: .75em;
   display: inline-block;
   padding: 0.1em .3em .25em;
   position: absolute;
