@@ -1,6 +1,60 @@
 @font-face {
   font-family: Circular Std;
   src: url(../assets/fonts/CircularStd-Book.otf); }
+@font-face {
+  font-family: Circular Std;
+  src: url(../assets/fonts/CircularStd-Book.otf); }
+.nubix-text {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 20px 0px 20px 30px; }
+
+.ac-ow {
+  height: 200px;
+  background-color: #415f8d !important;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.ac-ow .navbar-primary-menu li a {
+  display: block;
+  padding: 10px 18px;
+  text-align: left;
+  border-bottom: solid 1px #415f8d;
+  color: #ffffff; }
+
+.ac-ow .navbar-primary-menu li a:hover {
+  background-color: #375684;
+  text-decoration: none;
+  color: white; }
+
+.trend-achart img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.dashboard-ttd-aws-reachability-graph line, .dashboard-ttd-aws-reachability-graph .line {
+  fill: none;
+  stroke-width: 2px; }
+
+.dashboard-ttd-aws-reachability-graph .value1 {
+  stroke: #c71585; }
+
+.dashboard-ttd-aws-reachability-graph .value2 {
+  stroke: #7b68ee; }
+
+.dashboard-ttd-aws-reachability-graph rect.y-range-background {
+  opacity: 0.25; }
+
+line, .line {
+  fill: none;
+  stroke-width: 2px; }
+
 body {
   font-family: Circular Std; }
 
@@ -121,7 +175,7 @@ body {
   right: 0em;
   top: 0.25em; }
 
-svg {
+.svg {
   position: absolute;
   z-index: -1;
   width: 100%;
