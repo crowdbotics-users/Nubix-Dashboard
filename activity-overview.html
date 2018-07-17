@@ -85,58 +85,55 @@
                 </tr>
               </tbody>
             </table>
-          </div>
 
-          <!-- AWS Reachability -->
-          <div class="col-7">
-            <div class="parent">
-              <p class="graph-title">AWS Reachability - <small>Warning and error counts require 3 consecutive</small></p>
-              <div class="row pt-1 pb-2">
-                <div class="col-4">
-                  <div class="card bg-success">
-                    <div class="card-body pt-2 pb-0">
-                      <div class="card-subtitle">Success</div>
-                      <h3 class="text-center">20</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card bg-warning">
-                    <div class="card-body pt-2 pb-0">
-                      <div class="card-subtitle">Warning <small>(> 11.4ms)</small></div>
-                      <h3 class="text-center">4</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card bg-danger">
-                    <div class="card-body pt-2 pb-0">
-                      <div class="card-subtitle">Error <small>(> 1,500ms)</small></div>
-                      <h3 class="text-center">1</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row p-1">
-                <div class="col-12">
-                  <div class="dashboard-ttd-aws-reachability-graph">
-                    <svg id="wrapper" width="520" height="200">
-                    </svg>
-                  </div>
-                </div>
-              </div>
+            <div class="trend-achart">
+              <img src="assets/img/trend-analysis.png" alt="Trend Analysis Chart">
             </div>
           </div>
 
-        </div>
 
-        <div class="row">
-          <div class="col-5 trend-achart">
-            <img src="assets/img/trend-analysis.png" alt="Trend Analysis Chart">
-          </div>
-
-          <!-- Anomaly Detection -->
           <div class="col-7">
+            <!-- AWS Reachability -->
+              <div class="parent">
+                <p class="graph-title">AWS Reachability - <small>Warning and error counts require 3 consecutive</small></p>
+                <div class="row pt-1 pb-2">
+                  <div class="col-4">
+                    <div class="card bg-success">
+                      <div class="card-body pt-2 pb-0">
+                        <div class="card-subtitle">Success</div>
+                        <h3 class="text-center">20</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card bg-warning">
+                      <div class="card-body pt-2 pb-0">
+                        <div class="card-subtitle">Warning <small>(> 11.4ms)</small></div>
+                        <h3 class="text-center">4</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card bg-danger">
+                      <div class="card-body pt-2 pb-0">
+                        <div class="card-subtitle">Error <small>(> 1,500ms)</small></div>
+                        <h3 class="text-center">1</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-1">
+                  <div class="col-12">
+                    <div class="dashboard-ttd-aws-reachability-graph">
+                      <svg id="wrapper" width="520" height="200">
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Anomaly Detection -->
             <div class="parent">
               <p class="graph-title">Anomaly Detection</p>
               <div class="row p-1">
@@ -147,9 +144,10 @@
                   </div>
                 </div>
               </div>
+             </div>
             </div>
           </div>
-        </div>
+
 
     </div>
   </section>
