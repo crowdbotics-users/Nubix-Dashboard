@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nubix Demo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 parent-nav">
+        <nav class="navbar-primary ac-ow">
+          <ul class="navbar-primary-menu">
+            <li>
+              <p class="nubix-text">nubix</p>
+              <a href="#"><span class="nav-label">Overview</span></a>
+              <a href="#"><span class="nav-label">Platform</span></a>
+              <a href="#"><span class="nav-label">AdTech</span></a>
+              <a href="#"><span class="nav-label">Reports</span></a>
+              <a href="#"><span class="nav-label">Workflows</span></a>
+              <a href="#"><span class="nav-label">Models</span></a>
+              <a href="#"><span class="nav-label">Sandbox</span></a>
+              <a href="#"><span class="nav-label">Deployment & Security</span></a>
+              <a href="#"><span class="nav-label">Account Settings</span></a>
+              <a href="#"><span class="nav-label">Help</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-9 main-content">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-circle"></i> Alex Nastase</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+
+          <p>Workflows</p>
+          <p>Data & Analytics / Workflows</p>
+        <div class="row">
+          <div class="col-5">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">DC + Rack</th>
+                  <th scope="col">Success</th>
+                  <th scope="col">Warning</th>
+                  <th scope="col">Error</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">VA1</th>
+                  <td>134</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">VA2</th>
+                  <td>134</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">VA3</th>
+                  <td>134</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="trend-achart">
+              <img src="assets/img/trend-analysis.png" alt="Trend Analysis Chart">
+            </div>
+          </div>
+
+
+          <div class="col-7">
+            <!-- AWS Reachability -->
+            <div class="parent">
+                        <p class="graph-title">AWS Reachability - <small>Warning and error counts require 3 consecutive</small></p>
+                        <div class="row pt-1 pb-2">
+                          <div class="col-4">
+                            <div class="card bg-success">
+                              <div class="card-body pt-2 pb-0">
+                                <div class="card-subtitle">Success</div>
+                                <h3 class="text-center">20</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="card bg-warning">
+                              <div class="card-body pt-2 pb-0">
+                                <div class="card-subtitle">Warning <small>(> 11.4ms)</small></div>
+                                <h3 class="text-center">4</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="card bg-danger">
+                              <div class="card-body pt-2 pb-0">
+                                <div class="card-subtitle">Error <small>(> 1,500ms)</small></div>
+                                <h3 class="text-center">1</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row p-1">
+                          <div class="col-12">
+                            <div class="dashboard-ttd-aws-reachability-graph">
+                              <svg id="wrapper-aws" width="520" height="200">
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+              <!-- Anomaly Detection -->
+              <div class="parent">
+                      <p class="graph-title">Anomaly Detection</p>
+                      <div class="row p-1">
+                        <div class="col-12">
+                          <div class="dashboard-ttd-anomaly-detection-graph">
+                            <svg id="wrapper-anomaly" width="600" height="280">
+                            </svg>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.4.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/charts.js"></script>
+</body>
+</html>
