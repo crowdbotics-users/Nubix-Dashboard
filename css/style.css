@@ -81,7 +81,10 @@ line, .line {
 
 .table-dcrack, .trend-achart, .aws-chart, .anomaly-chart {
   font-size: 15px;
-  color: #464A53; }
+  color: #464A53;
+  -webkit-box-shadow: 0 3px 10px rgba(119, 119, 119, 0.1);
+  -moz-box-shadow: 0 3px 10px rgba(119, 119, 119, 0.1);
+  box-shadow: 0 3px 10px rgba(119, 119, 119, 0.1); }
 
 body {
   font-family: Circular Std; }
