@@ -2,10 +2,10 @@
 
 const margin = {top:0, right:20, bottom:30, left:60};
 
-const color1 = 'green';
-const color2 = 'blue';
-const color3 = 'red';
-const color4 = 'orange';
+const color1 = '#4ed4da';
+const color2 = '#203657';
+const color3 = '#4ed4da';
+const color4 = '#203657';
 
 for (var i=0; i<dataAWS.length; i++) {
     dataAWS[i].ts = new Date(dataAWS[i].ts);
@@ -60,7 +60,7 @@ function aws(){
       .attr('y', y(warningThresholdMillis))
       .attr('width', width)
       .attr('height', y(0) - y(warningThresholdMillis))
-      .attr('fill', 'green');
+      .attr('fill', 'white');
 
     // background for yellow y-range
     g.append('rect')
@@ -69,7 +69,7 @@ function aws(){
       .attr('y', y(errorThresholdMillis))
       .attr('width', width)
       .attr('height', y(warningThresholdMillis) - y(errorThresholdMillis))
-      .attr('fill', 'yellow');
+      .attr('fill', 'white');
 
     // define the 1st line
     let valueLine = d3.line()
