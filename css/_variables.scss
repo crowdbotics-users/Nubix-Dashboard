@@ -3,6 +3,7 @@
 $white: #ffffff;
 $purple: #4a43c0;
 $purple-hover: #413bb2;
+$sidebar-title: #abafb3;
 $text-gray: #464A53;
 $soft-gray: #e6e6e6;
 $light-gray: #848484;
@@ -16,10 +17,23 @@ $dark-blue-hover: #375684;
 $yellow-text: #ffd616;
 $red-text: #ff5252;
 
+// FONTS
 
+$brand-bold: CircularStd-Bold;
+$brand-book: CircularStd-Book;
 
 //FONTS
 @font-face {
 font-family: Circular Std;
 src: url(../assets/fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: CircularStd-Book;
+    src: url(../assets/fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: CircularStd-Bold;
+    src: url(../assets/fonts/CircularStd-Bold.otf);
 }
