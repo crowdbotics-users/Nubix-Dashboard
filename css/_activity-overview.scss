@@ -97,6 +97,11 @@
   }
 }
 
+.chart-size {
+  width: 500px;
+  height: 310px;
+}
+
 .trend-achart {
   img {
     max-width: 100%;
@@ -118,24 +123,44 @@
 
 
 .card {
+  font-size: 13px;
   border: none !important;
   box-shadow: 0 0 10px 0px rgba(119,119,119,0.1);
+  .card-body{
+    p{
+      font-size: 24px;
+      display: inline-block;
+    }
+  }
 }
 
+.success-card {
+  margin: 0px 0px 8px 10px;
+}
+
+.error-card {
+  margin: 0px 8px 0px 0px;
+}
+
+.graph-title {
+  padding: 20px 0px 0px 20px;
+}
 .dashboard-ttd-aws-reachability-graph line, .dashboard-ttd-aws-reachability-graph .line {
   fill: none;
   stroke-width: 2px;
-}
-.dashboard-ttd-aws-reachability-graph .value1 {
-  stroke: #c71585;
-}
-.dashboard-ttd-aws-reachability-graph .value2 {
-  stroke: #7b68ee;
 }
 .dashboard-ttd-aws-reachability-graph rect.y-range-background {
   opacity: 0.25;
 }
 
+.dashboard-ttd-aws-reachability-graph{
+  .value1 {
+    stroke: $red-text;
+  }
+  .value2 {
+    stroke: $yellow-text;
+  }
+}
 
 line, .line {
   fill: none;
@@ -144,9 +169,9 @@ line, .line {
 
 
 .table-dcrack, .trend-achart, .aws-chart, .anomaly-chart {
-  font-size: 18px;
+  font-size: 15px;
   color: $text-gray;
-  -webkit-box-shadow: 0px 5px 10px 0.8px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 5px 10px 0.8px rgba(0,0,0,0.1);
-  box-shadow: 0px 5px 10px 0.8px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 3px 10px rgba(119, 119, 119, 0.1);
+  -moz-box-shadow: 0 3px 10px rgba(119, 119, 119, 0.1);
+  box-shadow: 0 3px 10px rgba(119, 119, 119, 0.1);
 }
