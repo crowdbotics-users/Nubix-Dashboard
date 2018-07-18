@@ -98,28 +98,28 @@
               <!-- AWS Reachability -->
               <div class="parent aws-chart chart-size">
                           <p class="graph-title">AWS Reachability - Warning and error counts require 3 consecutive</p>
-                          <div class="row pt-1 pb-2">
+                          <div class="row">
                             <div class="col-4">
-                              <div class="card">
+                              <div class="card success-card">
                                 <div class="card-body pt-2 pb-0 success-text">
-                                  <div class="card-subtitle">Success</div>
-                                  <h3 class="text-center">121</h3>
+                                  <p>121</p>
+                                  <small>Success</small>
                                 </div>
                               </div>
                             </div>
                             <div class="col-4">
                               <div class="card">
                                 <div class="card-body pt-2 pb-0 warning-text">
-                                  <div class="card-subtitle">Warning<small>(> 11.4ms)</small></div>
-                                  <h3 class="text-center">4</h3>
+                                  <p>4</p>
+                                  <small>Warning ( > 11.4ms)</small>
                                 </div>
                               </div>
                             </div>
                             <div class="col-4">
-                              <div class="card">
+                              <div class="card error-card">
                                 <div class="card-body pt-2 pb-0 error-text">
-                                  <div class="card-subtitle">Error <small>(> 1500ms)</small></div>
-                                  <h3 class="text-center">0</h3>
+                                  <p>0</p>
+                                  <small>Error ( > 1500 ms)</small>
                                 </div>
                               </div>
                             </div>
@@ -127,7 +127,7 @@
                           <div class="row p-1">
                             <div class="col-12">
                               <div class="dashboard-ttd-aws-reachability-graph">
-                                <svg id="wrapper-aws" width="520" height="200">
+                                <svg id="wrapper-aws" width="520">
                                 </svg>
                               </div>
                             </div>
@@ -143,18 +143,14 @@
               <!-- Anomaly Detection -->
               <div class="col-6 parent anomaly-chart chart-size">
                       <p class="graph-title">Anomaly Detection</p>
-                      <div class="row p-1">
-                        <div class="col-12">
+                      <div class="p-1">
                           <div class="dashboard-ttd-anomaly-detection-graph">
-                            <svg id="wrapper-anomaly" width="600" height="280">
+                            <svg id="wrapper-anomaly" width="500" height="180">
                             </svg>
                           </div>
-                        </div>
                   </div>
               </div>
             </div>
-
-
 
     </div>
   </section>

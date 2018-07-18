@@ -48,8 +48,8 @@
 }
 
 .chart-size {
-  width: 500px ;
-  height: 420px;
+  width: 500px;
+  height: 310px;
 }
 
 .trend-achart {
@@ -73,14 +73,27 @@
 
 
 .card {
+  font-size: 13px;
   border: none !important;
   box-shadow: 0 0 10px 0px rgba(119,119,119,0.1);
+  .card-body{
+    p{
+      font-size: 24px;
+      display: inline-block;
+    }
+  }
 }
 
+.success-card {
+  margin: 0px 0px 8px 10px;
+}
 
+.error-card {
+  margin: 0px 8px 0px 0px;
+}
 
 .graph-title {
-  padding: 20px 0px 20px 20px;
+  padding: 20px 0px 0px 20px;
 }
 .dashboard-ttd-aws-reachability-graph line, .dashboard-ttd-aws-reachability-graph .line {
   fill: none;
