@@ -47,6 +47,11 @@
   }
 }
 
+.chart-size {
+  width: 500px ;
+  height: 420px;
+}
+
 .trend-achart {
   img {
     max-width: 100%;
@@ -72,6 +77,11 @@
   box-shadow: 0 0 10px 0px rgba(119,119,119,0.1);
 }
 
+
+
+.graph-title {
+  padding: 20px 0px 20px 20px;
+}
 .dashboard-ttd-aws-reachability-graph line, .dashboard-ttd-aws-reachability-graph .line {
   fill: none;
   stroke-width: 2px;
