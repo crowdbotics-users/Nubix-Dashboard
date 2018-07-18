@@ -26,6 +26,7 @@ $red-notification: #ED1C24;
 
 $brand-bold: CircularStd-Bold;
 $brand-book: CircularStd-Book;
+$brand-italic: CircularStd-BookItalic;
 
 //FONTS
 @font-face {
@@ -41,4 +42,9 @@ src: url(../assets/fonts/CircularStd-Book.otf);
 @font-face {
     font-family: CircularStd-Bold;
     src: url(../assets/fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+    font-family: CircularStd-BookItalic;
+    src: url(../assets/fonts/CircularStd-BookItalic.otf);
 }
