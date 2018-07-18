@@ -38,6 +38,19 @@
   max-width: 100%;
   max-height: 100%; }
 
+.success-text {
+  color: #9ec622; }
+
+.warning-text {
+  color: #ffd616; }
+
+.error-text {
+  color: #ff5252; }
+
+.card {
+  border: none !important;
+  box-shadow: 0 0 10px 0px rgba(119, 119, 119, 0.1); }
+
 .dashboard-ttd-aws-reachability-graph line, .dashboard-ttd-aws-reachability-graph .line {
   fill: none;
   stroke-width: 2px; }
@@ -55,6 +68,13 @@ line, .line {
   fill: none;
   stroke-width: 2px; }
 
+.table-dcrack, .trend-achart, .aws-chart, .anomaly-chart {
+  font-size: 18px;
+  color: #464A53;
+  -webkit-box-shadow: 0px 5px 10px 0.8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 10px 0.8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px 0.8px rgba(0, 0, 0, 0.1); }
+
 body {
   font-family: Circular Std; }
 
@@ -68,7 +88,7 @@ body {
   padding: 20px 0px 20px 30px; }
 
 .navbar-primary {
-  height: 740px;
+  height: 100%;
   background-color: #4a43c0;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;

@@ -54,6 +54,24 @@
   }
 }
 
+.success-text {
+  color: $green-text;
+}
+
+.warning-text {
+  color: $yellow-text;
+}
+
+.error-text {
+  color: $red-text;
+}
+
+
+.card {
+  border: none !important;
+  box-shadow: 0 0 10px 0px rgba(119,119,119,0.1);
+}
+
 .dashboard-ttd-aws-reachability-graph line, .dashboard-ttd-aws-reachability-graph .line {
   fill: none;
   stroke-width: 2px;
@@ -72,4 +90,13 @@
 line, .line {
   fill: none;
   stroke-width: 2px;
+}
+
+
+.table-dcrack, .trend-achart, .aws-chart, .anomaly-chart {
+  font-size: 18px;
+  color: $text-gray;
+  -webkit-box-shadow: 0px 5px 10px 0.8px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 5px 10px 0.8px rgba(0,0,0,0.1);
+  box-shadow: 0px 5px 10px 0.8px rgba(0,0,0,0.1);
 }
