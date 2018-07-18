@@ -86,6 +86,74 @@
       .ac-ow .ac-ow-nav .navbar-primary-menu .copyright {
         font-family: CircularStd-BookItalic; }
 
+.main-content {
+  margin: 0;
+  padding: 30px; }
+  .main-content .topbar {
+    margin-bottom: 25px; }
+    .main-content .topbar li.nav-item {
+      padding-top: 8px; }
+      .main-content .topbar li.nav-item a {
+        padding: 5px 10px;
+        margin-right: 10px; }
+        .main-content .topbar li.nav-item a i {
+          color: #aaaaaa !important;
+          font-size: 18px; }
+      .main-content .topbar li.nav-item .bell {
+        position: relative; }
+        .main-content .topbar li.nav-item .bell .notification {
+          position: absolute;
+          top: -2px;
+          right: 10px;
+          display: block;
+          background-color: #ED1C24;
+          height: 7px;
+          width: 7px;
+          border-radius: 50%;
+          border: 1px solid #f0f0f0; }
+    .main-content .topbar li.dropdown a {
+      text-decoration: none !important; }
+      .main-content .topbar li.dropdown a .circle {
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-color: #F1F1F1;
+        border: 3px solid #d9d9d9; }
+      .main-content .topbar li.dropdown a .name {
+        color: #6A707E;
+        font-family: CircularStd-Book;
+        font-size: 16px;
+        position: relative;
+        top: -12px;
+        padding-left: 8px; }
+    .main-content .topbar li.dropdown .dropdown-toggle:after {
+      position: relative;
+      top: -10px; }
+  .main-content .title-dashboard h4 {
+    color: #464A53;
+    font-family: CircularStd-Book;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0; }
+  .main-content .title-dashboard p {
+    color: #abafb3;
+    font-family: CircularStd-Book;
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .main-content .title-dashboard .btn-white {
+    background-color: #ffffff;
+    border: 1px solid #DDDFE1;
+    padding: 15px 25px;
+    margin-bottom: 10px; }
+    .main-content .title-dashboard .btn-white img {
+      height: 14px; }
+    .main-content .title-dashboard .btn-white span {
+      color: #464A53;
+      font-family: CircularStd-Book;
+      font-size: 14px;
+      padding-left: 5px; }
+
 .chart-size {
   width: 500px;
   height: 310px; }
