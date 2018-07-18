@@ -8,6 +8,9 @@
   font-family: CircularStd-Bold;
   src: url(../assets/fonts/CircularStd-Bold.otf); }
 @font-face {
+  font-family: CircularStd-BookItalic;
+  src: url(../assets/fonts/CircularStd-BookItalic.otf); }
+@font-face {
   font-family: Circular Std;
   src: url(../assets/fonts/CircularStd-Book.otf); }
 @font-face {
@@ -16,6 +19,9 @@
 @font-face {
   font-family: CircularStd-Bold;
   src: url(../assets/fonts/CircularStd-Bold.otf); }
+@font-face {
+  font-family: CircularStd-BookItalic;
+  src: url(../assets/fonts/CircularStd-BookItalic.otf); }
 .ac-ow {
   min-width: 320px;
   max-width: 320px;
@@ -77,6 +83,8 @@
         background-color: #375684;
         text-decoration: none;
         color: #ffffff; }
+      .ac-ow .ac-ow-nav .navbar-primary-menu .copyright {
+        font-family: CircularStd-BookItalic; }
 
 .chart-size {
   width: 500px;
