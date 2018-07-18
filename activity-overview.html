@@ -67,15 +67,21 @@
         </nav>
       </div>
       <div class="col main-content">
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-end topbar">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+            <a class="bell" href="#">
+              <i class="fas fa-bell"></i>
+              <span class="notification"></span>
+            </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-circle"></i> Alex Nastase</a>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <span class="circle"></span>
+              <span class="name">Alex Nastase</span>
+            </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -85,12 +91,16 @@
             </div>
           </li>
         </ul>
-
-
         <div class="row">
-          <div class="col">
+          <div class="col title-dashboard">
             <h4>Activity Overview</h4>
-            <p>Data &amp; Analytics / Workflows</p>
+            <p>Data &amp; Analytics / Overview</p>
+            <div class="text-right">
+              <button class="btn btn-white">
+                <img src="assets/icons/btn-calendar.png" alt="Sidebar Calendar">
+                <span>Time Period</span>
+              </button>
+            </div>
           </div>
         </div>
 

@@ -20,7 +20,6 @@
     transition: all 0.1s ease-in-out;
     min-width: 320px;
     max-width: 320px;
-    position: fixed;
 
     .navbar-primary-menu {  
       margin:0;
@@ -92,6 +91,109 @@
         background-color: $dark-blue-hover;
         text-decoration: none;
         color: $white;
+      }
+    }
+  }
+}
+
+.main-content{
+  margin: 0;
+  padding: 30px;
+
+  .topbar{
+    margin-bottom: 25px;
+
+    li.nav-item{
+      padding-top: 8px;
+      
+      a{
+        padding: 5px 10px;
+        margin-right: 10px;
+
+        i{
+          color: $topbar-icon !important;
+          font-size: 18px;
+        }
+      }
+
+      .bell{
+        position: relative;
+
+        .notification{
+          position: absolute;
+          top: -2px;
+          right: 10px;      
+          display: block;
+          background-color: $red-notification;
+          height: 7px;
+          width: 7px;
+          border-radius: 50%;
+          border: 1px solid #f0f0f0;
+        }
+      }
+    }
+
+    li.dropdown{
+      a{
+        text-decoration: none !important;
+
+        .circle{
+          display: inline-block;
+          height: 35px;
+          width: 35px;
+          border-radius: 50%;
+          background-color: $circle-bg;
+          border: 3px solid $circle-border;
+        }
+
+        .name{
+          color: $topbar-name;
+          font-family: $brand-book;
+          font-size: 16px;
+          position: relative;
+          top: -12px;
+          padding-left: 8px;
+        }
+      }
+
+      .dropdown-toggle:after{
+        position: relative;
+        top: -10px;
+      }
+    }
+  }
+
+  .title-dashboard{
+    h4{
+      color: $text-gray;
+      font-family: $brand-book;
+      font-size: 22px;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    p{
+      color: $sidebar-title;
+      font-family: $brand-book;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .btn-white{
+      background-color: $white;
+      border: 1px solid #DDDFE1;
+      padding: 15px 30px;
+      margin-bottom: 30px;
+
+      img{
+        height: 14px;
+      }
+
+      span{
+        color: #464A53;
+        font-family: $brand-book;
+        font-size: 14px;
+        padding-left: 5px;
       }
     }
   }
