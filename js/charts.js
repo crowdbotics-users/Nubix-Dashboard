@@ -118,7 +118,7 @@ function aws(){
     // draw legend
     let legend = svg.append('g')
       .attr('class', 'legend')
-      .attr('transform', 'translate(50,0)')
+      .attr('transform', 'translate(90,0)')
       .style('font-size', '12px');
     const legendWidth = 170, legendHeight = 35;
     legend.append('rect')
