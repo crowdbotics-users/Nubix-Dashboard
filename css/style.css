@@ -4,11 +4,6 @@
 @font-face {
   font-family: Circular Std;
   src: url(../assets/fonts/CircularStd-Book.otf); }
-.nubix-text {
-  font-size: 30px;
-  color: #ffffff;
-  padding: 20px 0px 20px 30px; }
-
 .ac-ow {
   height: 200px;
   background-color: #415f8d !important;
@@ -86,7 +81,7 @@ line, .line {
   stroke-width: 2px; }
 
 .table-dcrack, .trend-achart, .aws-chart, .anomaly-chart {
-  font-size: 18px;
+  font-size: 15px;
   color: #464A53;
   -webkit-box-shadow: 0px 5px 10px 0.8px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 5px 10px 0.8px rgba(0, 0, 0, 0.1);
